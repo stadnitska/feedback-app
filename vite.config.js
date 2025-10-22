@@ -10,5 +10,13 @@ export default defineConfig({
   preview: {
     port: 3000,
     strictPort: false
+  },
+  build: {
+    target: 'esnext',
+    minify: 'terser',
+    sourcemap: false
+  },
+  ssr: {
+    noExternal: true
   }
 });

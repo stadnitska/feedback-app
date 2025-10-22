@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@sveltejs/vercel-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/courses/(.*)",
+      "dest": "/api/courses"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
